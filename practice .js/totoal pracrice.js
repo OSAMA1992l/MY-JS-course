@@ -277,22 +277,256 @@
 
 
 
-let product ={
-    name:"iphone 14 pro max",
-    company: "Apple",
-    color: "Black",
-}
-Object.freeze(product)
-console.log(product)
-product.name= " iphone 10"
-delete product.color
+// let product ={
+//     name:"iphone 14 pro max",
+//     company: "Apple",
+//     color: "Black",
+// }
+// Object.freeze(product)
+// console.log(product)
+// product.name= " iphone 10"
+// delete product.color
 
-Object.keys(product)
+// Object.keys(product)
 
-Object.values(product)
+// Object.values(product)
 
-console.log(product)
+// console.log(product)
 
-Object.entries(product);
+// Object.entries(product);
 
-console.log(product)
+// console.log(product)
+
+// anynomous function whose no name no identity is called anynomous function it store in vasriables
+
+// let y = function(){
+//     console.log('anynomous function')
+
+// }
+// ()
+
+// imediatly involve function whose declare imediatly;
+
+// (function g (x){
+//     console.log(x*x)
+// })(4)
+
+// high order function when function inside the function call
+
+// function f(x,fn){
+//     console.log(x*x)
+//     fn(x*x);
+// }
+// f(3, o)
+
+// function o (x){
+//     console.log("call back",x)
+// }
+
+// Important object method
+// let product =  {
+//     name: "osama",
+//     class: "BCA",
+//     college: "DPG",
+//     school: "shiv baal vidya peeth"
+// }
+// Object.freeze(product)
+// console.log(product)
+// product.name = "ayas"
+// delete product.name
+// Object.isFrozen
+// console.log(product)
+
+// mutability = when we have changed the value is called mutabolity;
+// imutibilty = when we have no chaned the value is called immutibilty;
+
+// there 4 pillar of java script
+/*
+1 =scopes and closer
+2 = corsion and types.
+3 = object classes.
+4.asyncronum programming
+
+// scopes and closer
+depend on compiler and interpreted
+
+compiler when code write and it exute in signle line is called compiler
+intepreted when code ecxute and line by line is called innterpreted
+
+thre are 2 phase of in js code exution
+1 pahse = compiler and scopre and visualision;
+2 phase = intepreted code exucation
+
+there thre scope in js code exucation
+
+global scope
+function scope
+block scope
+
+var is used in global and function scope and where we declare var in function and global any where
+let and const is used in block scope we not declare any where in block scope 
+first we declare then excute the value 
+*/
+
+// var teacher = "osama"
+// console.log(teacher)
+
+// function f(){
+//    var osama = "math"
+//     console.log(osama)
+// }
+
+// OOps1
+
+// class product{
+
+
+//   constructor(productName,productPrice,productCatogory,productRating){
+//     this.name = productName;
+//     this.price = productPrice;
+//     this.Catogory = productCatogory;
+//     this.rating = productRating;
+//   }
+
+
+//     buyProduct(){
+// console.log("buy product")
+//     }
+
+//     addToCart(){
+//         console.log("add to cart")
+//     }
+
+//     removeToCart(){
+//         console.log("remove to cart")
+//     }
+// }
+
+// let iphone= new product ("i phone 11 pro",15000, "mobile" , "rating 4.4");
+
+// console.log(iphone);
+
+// Object.keys(product)
+
+// class product {
+
+// #name;
+// #price;
+// discribtion;
+// rating;
+
+// constructor(productName,productPrice,productDiscribtion,productRating){
+
+// this.#name = productName
+// this.#price = productPrice
+// this.discribtion = productDiscribtion
+// this.rating = productRating
+
+// }
+
+//   addToCart(){
+//     console.log("add to cart")
+//   }
+//   removeToCart(){
+//     console.log("remove to cart")
+//   }
+//   buyProduct(){
+//     console.log("buy product",this)
+//   }
+
+// }
+
+// let iphone = new product("iphone 13 pro max",155000,"mobile" , "4.5rating")
+// console.log(iphone)
+
+
+// iphone.buyProduct()
+// let osaam =function(x){
+//   console.log(x*x)
+// }
+// osaam(3)
+
+// (function osama(x){
+//   console.log(x*x)
+// })(5);
+
+// function osama (x,fn){
+//   console.log(x*x)
+//   fn(x)
+// }
+// osama(10,y
+// )
+
+// function y (x){
+//   console.log("square value is",x)
+// }
+
+// let product ={
+//   name:"iphone",
+//   price:7458738,
+//   color:"black",
+// }
+// console.log(product)
+// Object.keys(product)
+// console.log(product)
+
+// function fn(){
+//   console.log("value of x is",x)
+//   let x = 10;
+//   console.log("value of x",x)
+// }
+// fn()
+
+// java script pillar are 4 types
+// 1) scipe and collasion
+// 2) collasion and types
+// 3)object classes
+// 4)Async programming
+
+// discuss on scope and closserd
+
+/*
+java script is a hybrid language whic is used two softwere compiler and inrepret
+compiler is a softwere whose read oue code in phase 1 if in compiler used in c c++ if we write 10th line 
+code and errore is 1-th line all code  are errore but intepreted work on its oposite interpreted wxcute the 
+code line by line in js compiler and interted both work compiler is used for vision the scoping variables but intepred used
+excute the value
+
+there are three types of scope in js
+1) global scope
+2) function scope
+3) block scope
+var is used both function scope and global scope
+but 
+let and cost is used block scope
+
+(notes: one more scope exite thaat is auto global scope when we do not define the vvariables for a value its java script take it auto global scope)
+LHS = when we assign the value is called LHS
+and 
+RHS - when we consume the value it called RHS
+
+notes(we can't chane the value of const but we can change value let)
+(notes lexical scope help to flow above when we don't find the value function scope it check global scope when global also empty it take it auto global )
+
+(TdZ= temopary dead zone when we declare let and const before consuming its reachedus into dead zone but it's opposiye in case ovar its easily declate before the instilization)
+
+##hoisting
+when we cansume the value of let /const before declation it take us error; but in case of const it easily work and take us to undifined value
+
+function declartion = when we used  function and its first token is function is called function declation;
+functin expression = when used function and its first token is not a function is called = function expression 
+
+types of function is d/f types
+1)anynomous function when we put function into the variables is calle anynomous function we can't give the for its )
+2) immediatly function = wehen we call the function inside the function its pack into (in) is called immediatly involve function )  
+3) arrow function is used in which used the arroew for define the function is callled arrow function
+
+##OBJECT = synchromous = when code excute line by line is called synchronous 
+Asynchronous = when code dos't exute libne by line is cllead asynchronous 
+###Making of object in js are d/f way
+acces the key of an object = Object.keys (object name)
+acces the value of an object in js  used this metod = Object.values(objectname)
+
+
+
+*/
