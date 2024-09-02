@@ -1,56 +1,60 @@
-class product{
 
+class product{
     #name;
     #price;
-    catogory;
-    #disceiption;
+    Category;
+    discription;
     rating;
-
-constructor(productName,productPrice,productCatogory, productDiscribtion,productRating){
-   
-this.#name = productName 
-this.#price = productPrice
-this.catogory = productCatogory
-this.#disceiption = productDiscribtion   
-this.rating = productRating
-}
-
-setprice(p){
-    if(p>0){
-       this.#price = p;
-    }else{
-        console.log("invalid price")
+    
+    constructor(productName,productPrice,productCategory,productDiscribtion,productRating){
+        this.#name = productName;
+        this.#price = productPrice;
+        this.Category =productCategory;
+        this.discription = productDiscribtion;
+        this.rating = productRating;
     }
-}
-
-getprice(){
-    return this.#price
-}
- 
-
-
-
-    addToCart(){
-     console.log("add to cart")
+    
+    setprice(p){
+        if(p > 0){
+            return this.#price = p
+        }
+        else{
+            return "invalid price";
+        }
     }
-
+    
+    getprice(){
+        return this.#price
+    }
+    
+    get discription(){
+        return this.discription
+    }
+    
+    addtocart(){
+        console.log('add to cart')
+    }
+    
     removeToCart(){
-     console.log("remove to cart")
+        console.log('remove to cart')
     }
-
-    displayProduct (){
-        console.log("display product", this)
+    displayproduct(){
+        console.log("display product")
     }
-
     buyProduct(){
-        console.log("buy the product",this.#name,this.#price)
+        console.log("buy the product",this.#name,this.#price,this.Category,this.discription)
     }
-}
-
-let iphone = new product("iphone 11 pro max",150000,"electronics","mobile",  "4.5 star")
-
-console.log(iphone)
-
-iphone.setprice(1000)
-iphone.buyProduct();
-console.log(iphone.getprice())
+    }
+    
+    let iphone = new product ("IPHONE 12",3000,"MOBILE","ELECTRONICS","4.5 rating");
+    
+    console.log(iphone)
+    
+    iphone.setprice (1000)
+    
+    iphone.buyProduct()
+    console.log(iphone.getprice());
+    
+    iphone.discription = "sumsung"
+    
+    iphone.buyProduct()

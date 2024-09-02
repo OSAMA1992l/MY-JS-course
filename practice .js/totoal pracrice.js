@@ -1,532 +1,588 @@
-// short cuircuit truthy and falsy valus
+// array  
+// let arr1 = [null,undefined,"osama",80]
+// let arr2 = [undefined,null,"khan",90]
+// // console.log(arr1.concat(arr2))
+// // console.log(arr1.length)
+// // console.log(arr1.slice(1,3))
+// let arr3 =(arr2.splice(0,3))
+// // console.log(arr3)
+// arr1.shift()
+// console.log(typeof(arr1))
 
-// let age =41;
-
-// if (age<=18){
-//     console.log("ilegible")
+//   function are d/f types
+// anynomous function = not a name and identity is called nynomous funvtion its put in vaeiables
+// let x = function(x){
+//     // console.log(x*x) Example of anynomous function
 // }
-// else if (age>=19 && age <=50){
-//     console.log("its a senior citizen")
-// if (age>=20 && age<=40){
-//     console.log("senior plus")
+// (5)
+
+// (function fn(x){
+//     // console.log(x+x) Example of imediatly involve function
+// }(5))
+
+// high order function = function whose take a function like a srgument is called highh order function
+// function osama (x,fn){
+// console.log(x*x)
+// fn(x+x)
 // }
-// else if (age>=40 && age <=49){
-//     console.log("senioe ++")
-// }
-// }
-// else if (age>=51 && age<=100){
-//     console.log("old catogary")
-// }
+// osama(5, function(x){   
+//     // console.log("valu of x is",x) example of high order function
+// })
+// call back call a high order function we take the name of function is callled Call back
 
-// switch conditionals
+//   {Object}
 
-// let type = "default"
-// let a = 100;
-// let b = 30;
-// switch (type){
-//     case "addition":
-//         console.log(a+b);
-// break;
-//         case "subtract":
-//         console.log(a-b);
-//         default: "default"
-//             "this is default value"
-// }
 
-// loop 
-
-// let x = 1;
-
-// while (x<=10){
-//     console.log(x)
-//     x+=1;
-// }
-
-// for (let y =1; y<=10;++y){
-//     console.log(y);
-// }
-
-// let m =1;
-// do {
-//     console.log(m);
-//     ++m;
-// } while (m<=10);
-
-  
-// let x = 2;
-
-// while (x<=10){
-//     if(x*5==40);
-//     console.log(x);
-// x+=1;
-// }
-
-// let m =1;
-// while (m<=10){
-//     if(m/5==1.4){
-//         ++m;
-//         break;
-//     }
-//     console.log(m);
-//     ++m;
-// }
-
-// function osaam (){
-// console.log("this is one function1")
-// console.log("this is one function2")
-// console.log("this is one function3...")
-// console.log("this is one function4")
-// }
-// osaam();
-// osaam();
-// osaam();
-
-// function evenOrOdd (x){
-//    if (x*4==16){
-//    return "EVEN"
-//    } 
-//    else{
-//     return "odd"
-//    }
-// }
-// let x = evenOrOdd(5);
-// console.log(x);
-
-// Araay when in one variable we store one more than object is called array
-
-// let arr1 = [10,10,null,undefined,"osama"];
-// arr1.reverse("osama");
-// console.log(arr1)
-
-// console.log(arr1.indexOf("osama"));
-
-// let table = {id:101,name:"osama",salary:1550}
-
-// console.log(table);
-
-// console.log(table.name);
-
-// table.salary = 3000;
-// console.log(table);
-// delete table.name
-// console.log(table)
-
-// truthy and falsy values
-
-// console.log(10 || -0);
-
-// conditionals
-
-// let age  = 28;
-
-// if (age>=18 ){
-// console.log('give the vote');
-// }else if (age>=19 && age<=50){
-//     console.log("senior citizen")
-// }else if(age>=51 && age<=100){
-//     console.log("old catagary")
-// }
-
-// let userSignnedIn = true;
-// let userLoggedIn = false;
-
-// if (userLoggedIn && userSignnedIn){
-//     console.log("show the dashboard")
-// }else{
-//     console.log("home page")
-// }
-// loop
-
-// let y = 1;
-
-// while (y<=10){
-//     console.log(y);
-//     ++y;
-// }
-
-// for (let m =1;m<=10;++m){
-//     console.log(m);
-// }
-// b =1;
-// do {
-//     console.log(b);
-//     ++b;
-// } while (b<=10);
-//switch
-
-// let type = "add";
-
-// switch (type){
-//     case "add":
-//     console.log(10+10);
-// }
-
-
-
-
-
-
-// function
-
-// function evenOrOdd (x){
-//     if (x*4==16){
-//        return "even"
-//     }
-//     else{
-//         return "odd"
-//     }
-// }
-
-// let y = evenOrOdd(4);
-// console.log(y);
-
-// Array;
-// let arr = [10,10,null,undefined,909, "osama"];
-// console.log(arr);
-// console.log(arr.length);
-// console.log(arr.indexOf(null))
-// arr.pop[5];
-// console.log(arr);
-// object
-// let object = {id:101,name:"osama",salry:15550};
-// console.log(object);
-// objec
-
-// annynomous function whose which no name and identity is calle danynamous function;
-// its put put on q variables
-// let y = function(){
-//     console.log("my name is osama");
-// }
-// ();
-// immediatly function
-// (function (){
-//     console.log("my name is osama");
-// })();
-
-// console.log("Start...");
-
-// setTimeout (function f(){
-// console.log("this is th epower");
-// },5000);
-// console.log("End....");
-// let x = 10;
-
-// x = 20;
-// console.log(x);
-// anynomous function that no name and identity
-
-// let = function(){
-//     console.log("my name is osama")
-// }
-// ()
-
-// annynomous function those function whose not required any name and identity its store in variables;
-// let product = function(){
-//     console.log("this is anynomus function")
-
-// }
-// ();
-
-// imediatly involve function when function exucute to temporiary is called imediatly function;
-// we are give the name and not;
-// (function (){
-//     console.log("this is imediattly function")
-// })();
-
-// Call back and high order funcion = when we give function inside the function
-
-// function product(x,osama){
-// product is a high order function;
-// osama is a callback
-//     console.log(x*x);
-//     osama(x*x)
-// }
-// product(10,osama);
-
-// function osama(x){
-// console.log("this is call back", x)
-// }
-
-
-// IMPORTANT method of Object;
-
-// let product = {
-//     name: "i phone 14 pro max",
-//     company: "Apple",
-//     Price : 15000,
-//     color: "Black",
-// }
-// console.log(product);
-// product.name = "vivo v20"
-// console.log(product)
-// Object.defineProperty(product," i phone 14 pro max" , {writable : false});
-
-// programming languages are based on two softwre (compiler)(interpreted);
-// some languages work on interpreted nad some langugese work on compiler
-// compiler work on those languages whose exute the code like single way if we write a code in 10th line
-// and error is 10th all code are false
-// c c++
-
-// interpreted languages those language work on the compiler its exute the code line by line
-// if we write a code 10th line and error is 10th line all code are show when errore is not come whrn error is come code exution are stoped = bash;
-
-// hybride languages those languagges work on compiler and interpred is called hybride languages like = java,js python 
-// there are two phases of hybride languages
-// compiler and scope resulation;
-// interpret phase
-
-
-
-// let product ={
-//     name:"iphone 14 pro max",
-//     company: "Apple",
-//     color: "Black",
-// }
-// Object.freeze(product)
-// console.log(product)
-// product.name= " iphone 10"
-// delete product.color
-
-// Object.keys(product)
-
-// Object.values(product)
-
-// console.log(product)
-
-// Object.entries(product);
-
-// console.log(product)
-
-// anynomous function whose no name no identity is called anynomous function it store in vasriables
-
-// let y = function(){
-//     console.log('anynomous function')
-
-// }
-// ()
-
-// imediatly involve function whose declare imediatly;
-
-// (function g (x){
-//     console.log(x*x)
-// })(4)
-
-// high order function when function inside the function call
-
-// function f(x,fn){
-//     console.log(x*x)
-//     fn(x*x);
-// }
-// f(3, o)
-
-// function o (x){
-//     console.log("call back",x)
-// }
-
-// Important object method
-// let product =  {
-//     name: "osama",
-//     class: "BCA",
-//     college: "DPG",
-//     school: "shiv baal vidya peeth"
-// }
-// Object.freeze(product)
-// console.log(product)
-// product.name = "ayas"
-// delete product.name
-// Object.isFrozen
-// console.log(product)
-
-// mutability = when we have changed the value is called mutabolity;
-// imutibilty = when we have no chaned the value is called immutibilty;
-
-// there 4 pillar of java script
-/*
-1 =scopes and closer
-2 = corsion and types.
-3 = object classes.
-4.asyncronum programming
-
-// scopes and closer
-depend on compiler and interpreted
-
-compiler when code write and it exute in signle line is called compiler
-intepreted when code ecxute and line by line is called innterpreted
-
-thre are 2 phase of in js code exution
-1 pahse = compiler and scopre and visualision;
-2 phase = intepreted code exucation
-
-there thre scope in js code exucation
-
-global scope
-function scope
-block scope
-
-var is used in global and function scope and where we declare var in function and global any where
-let and const is used in block scope we not declare any where in block scope 
-first we declare then excute the value 
-*/
-
-// var teacher = "osama"
-// console.log(teacher)
-
-// function f(){
-//    var osama = "math"
-//     console.log(osama)
-// }
-
-// OOps1
+// Classes are blue print of Object
+// After making class final project is = Object
 
 // class product{
-
-
-//   constructor(productName,productPrice,productCatogory,productRating){
-//     this.name = productName;
-//     this.price = productPrice;
-//     this.Catogory = productCatogory;
-//     this.rating = productRating;
-//   }
-
+// #name
+// #price
+//     constructor(builder){
+//         this.#name = builder.name
+//         this.#price=builder.price
+//         this.category = builder.category
+//         this.describtion = builder.describtion
+//     }
 
 //     buyProduct(){
-// console.log("buy product")
+//         console.log("buy the product")
 //     }
-
 //     addToCart(){
-//         console.log("add to cart")
+//         console.log("ADD to cart",this)
 //     }
-
 //     removeToCart(){
 //         console.log("remove to cart")
 //     }
 // }
 
-// let iphone= new product ("i phone 11 pro",15000, "mobile" , "rating 4.4");
+// // getprice(price);{
+// //     console.log(this.#price)
+// // }
+// const  iphone = new product ({
+//     name:"i phone",
+//     price: 90000,
+//     category: "mobile",
+//     describtion: "Apple"
+// })
+
+// console.log(iphone)
+// iphone.addToCart()
+
+// function subtraction(){
+//     console.log(100-50)
+// }
+// setTimeout(subtraction,3000)
+
+// console.log("hello")
+// function multiply(){
+//     console.log(30*30)
+// }
+// setTimeout(multiply,1000)
+// console.log('End..')
+
+// let timer = 60;
+
+// function osama(){
+//     timer++
+//     console.log(timer)
+//     if(timer== 10){
+//         clearInterval(interval)
+//     }
+// }
+// let interval=setInterval(osama,1000)
+
+// function add(num1,num2){
+// return num1+num2
+// }
+
+// function outer(add){
+//     return add(20,30)
+// }
+
+//   [[Making of arra]]
+// let arr1 = [null,undefined,"osama",90,30]
+// let arr2 = [1,2,3,4,5,5];
+
+// // let arr3 = [arr1.concat(arr2)]
+// // console.log(arr3)
+// arr1.unshift(34)
+// console.log(arr1)
+// console.log(arr1.length)
+// console.log(typeof(arr1))
+
+// // console.log(outer(add))
+
+// function inerr( val_1, val_2){
+//     return val_1+val_2}
+//      function outer(inerr){
+//       return inerr(2,4)
+//      }
+   
+  
+//   console.log(outer(inerr))
+//    [Object]
+
+// let product = {name:"i phone 14",price:30000,categoty:"mobile",describtion:"apple"}
+// console.log(Object.isFrozen(product))
+
+// class product{
+// #name
+// #price
+
+//     constructor(builder){
+//         this.#name = builder.name
+//         this.#price = builder.price
+//         this.category = builder.category
+//         this.describtion = builder.describtion
+//     }
+
+
+// setname(n){
+//     this.#name=n
+// }
+
+
+// getname(){
+//     return this.#name
+// }
+
+
+//    setprice(p){
+// this.#price=p
+//    }
+
+//    getprice(){
+//     return this.#price
+//    }
+
+//     buyProduct(){
+//         console.log("buy the product")
+//     }
+//     addToCart(){
+//         console.log("add to cart",this.#name,this.#price,this.category,this.describtion)
+//     }
+//     removeToCart(){
+//         console.log("remove from Cart")
+//     }
+// }
+
+// let iphone = new product({
+//     name:"iphone 14 pro.",
+//     price:90000.,
+// category:"mobile.",
+// describtion:"Apple."
+// });
+
 
 // console.log(iphone);
+// // console.log(iphone.addToCart())
+// iphone.setprice(188000)
+// console.log(iphone.getprice())
+// iphone.setname("realme")
+// console.log(iphone.getname())
 
-// Object.keys(product)
+// class product{
+// #name
+// #price
 
-// class product {
+//     constructor(builder){
+//         this.#name = builder.name
+//         this.#price= builder.price
+//         this.category = builder.category
+//         this.describtion = builder.describtion
+//     }
 
-// #name;
-// #price;
-// discribtion;
-// rating;
+// setname(name){
+//     this.#name=name
+// }
 
-// constructor(productName,productPrice,productDiscribtion,productRating){
+// getname(){
+//    return this.#name
+// }
 
-// this.#name = productName
-// this.#price = productPrice
-// this.discribtion = productDiscribtion
-// this.rating = productRating
+
+
+// setprice(price){
+//     this.#price = price
+// }
+
+// getprice(){
+//     return this.#price
+// }
+
+//     AddToCart(){
+//         console.log("Add to cart",this)
+//     }
+//     removeToCart(){
+//         console.log("remove from the cart")
+//     }
+// }
+
+// let iphone = new product({
+//     name: "iphone 14 pro max...",
+//     price:10000,
+//     category:"mobile..",
+// describtion: "apple..",
+// })
+// // console.log(iphone)
+// console.log(iphone.AddToCart())
+// iphone.setprice(900000)
+// console.log(iphone.getprice())
+// iphone.setname("vivo")
+// console.log(iphone.getname())
+
+// class product{
+
+// #name
+// #price
+
+//     constructor(builder){
+//       this.#name = builder.name
+//       this.#price =builder.price
+//       this.category =builder.category
+//       this.describtion = builder.describtion
+//     }
+
+// setprice(price){
+//     this.#price=price
+// }
+
+// getprice(){
+//    return this.#price
+// }
+
+
+// setname(name){
+//     this.#name=name
+// }
+
+// getname(){
+//     return this.#name
+// }
+
+//     addToCart(){
+//         console.log("add to cart",this.#name,this.#price,this.category,this.describtion)
+//     }
 
 // }
 
-//   addToCart(){
-//     console.log("add to cart")
-//   }
-//   removeToCart(){
-//     console.log("remove to cart")
-//   }
-//   buyProduct(){
-//     console.log("buy product",this)
-//   }
+// var iphone = new product({
+//     name:"iphone 14 pro max",
+//     price:10000,
+//     category:"mobile",
+//     describtion:"Mobile"
+// })
+// console.log(iphone)
+// console.log(iphone.addToCart())
+// iphone.setprice(50000)
+// console.log(iphone.getprice())
 
+// iphone.setname("vivo")
+// console.log(iphone.getname())
+// console.log(iphone.addToCart())
+
+//  [amking of array and its function] = aray collection of values
+
+// var arar1 = [20,30,40,null,undefined]
+// // var arar2 = [50,60,70,80]
+// // console.log(arar1.concat(arar2))
+// console.log(arar1.length)
+// arar1.shift()
+// console.log(arar1.slice(0,5))
+// // var arar2 = (arar1.splice(0,4))
+// // console.log(arar2)
+
+//  making of object {}
+// var product = {name:"iphone14 pro max",price:10000,category:"mobile"}
+// Objectis clear 
+
+
+// class is blue print of object final prodwct making class is called = object
+
+// class also complete
+
+// class product{
+// #name
+// #price
+
+//     constructor(builder){
+//         this.#name = builder.name
+//         this.#price = builder.price
+//         this.category = builder.category
+//         this.describtion = builder.describtion
+//     }
+
+
+// setprice(price){
+//     this.#price=price
+// }
+// getprice(){
+//    return this.#price
 // }
 
-// let iphone = new product("iphone 13 pro max",155000,"mobile" , "4.5rating")
+
+// setname(name){
+//     this.#name = name
+// }
+
+// getname(){
+//     return this.#name
+// }
+//     addToCart(){
+//         console.log("add to cart",this.#name,this.#price,this.category,this.describtion)
+//     }
+//     removeToCart(){
+//         console.log("remove from the cart")
+//     }
+
+//     buyProduct(){
+//         console.log("buy the product")
+//     }
+// }
+
+// var iphone = new product({
+//     name:"iphone 12 pro max...",
+//     price:10000,
+//     category:"mobile",
+//     describtion:"Apple"
+// })
+
 // console.log(iphone)
 
+// iphone.setname("vivo")
+// console.log(iphone.getname())
+// console.log(iphone)
 
-// iphone.buyProduct()
-// let osaam =function(x){
-//   console.log(x*x)
+// iphone.setprice(300);
+// console.log(iphone.getprice())
+// console.log(iphone.addToCart())
+
+
+// sunchronous = when java script use own function is called synchrousn and excude line by line is calle dsynchronous
+// asynchrnous = when java script use run time wnviromebnt to rin asynchronouds code ans this not ecxute line by line 
+
+// example of synchronous code
+
+// function fn(x,os){
+//     console.log(x*x)
+//     os(x+x)
 // }
-// osaam(3)
+// fn(5,function(x){
+//     console.log("this a function",x)
+// })
 
-// (function osama(x){
-//   console.log(x*x)
-// })(5);
-
-// function osama (x,fn){
-//   console.log(x*x)
-//   fn(x)
+// function fn(x){
+//     console.log(x*x)
 // }
-// osama(10,y
-// )
+// fn(4,os)
 
-// function y (x){
-//   console.log("square value is",x)
+// function os(x){
+//     console.log(x)
 // }
+// os(3)
 
-// let product ={
-//   name:"iphone",
-//   price:7458738,
-//   color:"black",
-// }
-// console.log(product)
-// Object.keys(product)
-// console.log(product)
+// above example of a synchronous tast
+
+
+// asunchronous
 
 // function fn(){
-//   console.log("value of x is",x)
-//   let x = 10;
-//   console.log("value of x",x)
+//     console.log("show dahbord")
+// }
+
+// setInterval(fn,3000)
+
+// function myFunction(msg,x){
+//     console.log(msg,x)
+// }
+
+// myFunction("i love js","osama")
+// const sum = (a,b)=>{
+//     console.log(a+b)
+// }
+// sum(5,7)
+
+// const multiply=(x,y)=>{
+// return x*y;
+// }
+// multiply(10,10)
+
+    //   [Arrays]
+
+    // let arr1 = [1,2,3,4,5]
+    // // let arr2 =[6,7,8,9,10]
+    // // console.log(arr1.concat(arr2))
+    // console.log(arr1)
+    // arr1.shift()
+    // console.log(arr1)
+    // console.log(arr1.slice(1,2))
+    // let arr2 =[arr1.splice(0,4)]
+
+    //  making of Object
+    let product = {name:"iphone 14 ro max",price:10000,category:"moile"}
+
+//     class product{
+//     #name
+//     #price
+//         constructor(builder){
+//             this.#name = builder.name
+//             this.#price = builder.price
+//             this.category = builder.category
+//         }
+
+//        setname(name){
+//         this.#name=name
+//        }
+//        getname(){
+//         return this.#name
+//        }
+
+
+
+//         setprice(price){
+//             this.#price=price
+//         }
+//         getprice(){
+//             return this.#price
+//         }
+
+//         buyProduct(){
+//             console.log("buy the product",this.#name,this.#price,this.category)
+//         }
+//     }
+
+
+//     var iphone = new product({
+//         name:"iphone 14 pro max",
+//         price:10000,
+//         category :"mobile"
+//     })
+  
+// iphone.setprice(2)
+// console.log(iphone.getprice())
+// iphone.setname("vivo v21...")
+// console.log(iphone.getname())
+// console.log(iphone.buyProduct())
+   
+
+
+// function fn(){
+//     console.log("osama")
 // }
 // fn()
+// setInterval(fn,1000)
 
-// java script pillar are 4 types
-// 1) scipe and collasion
-// 2) collasion and types
-// 3)object classes
-// 4)Async programming
+// let m=(x,y)=>{
+//    return (x*x)
+// }
+// let y = m(10,10)
+// console.log(y)
 
-// discuss on scope and closserd
+// function countvovels(x){
+// let count=0;
 
-/*
-java script is a hybrid language whic is used two softwere compiler and inrepret
-compiler is a softwere whose read oue code in phase 1 if in compiler used in c c++ if we write 10th line 
-code and errore is 1-th line all code  are errore but intepreted work on its oposite interpreted wxcute the 
-code line by line in js compiler and interted both work compiler is used for vision the scoping variables but intepred used
-excute the value
+// for(const char of x){
+//     let count =0;
+//     if(char ==="a"||
+//         char ==="e"||
+//         char==="i"||
+//         char==="o"||
+//         char==="u"
+//     ){
+//         count++
+//     }
+// }
+// console.log(count)
+// }
+// countvovels("apna college")
+// let arr1 = ["osama","khan","kaithwara"]
 
-there are three types of scope in js
-1) global scope
-2) function scope
-3) block scope
-var is used both function scope and global scope
-but 
-let and cost is used block scope
+// arr1.forEach(function fn(x,ok,arar1){
+//     console.log(x,ok,arr1)
+// })
 
-(notes: one more scope exite thaat is auto global scope when we do not define the vvariables for a value its java script take it auto global scope)
-LHS = when we assign the value is called LHS
-and 
-RHS - when we consume the value it called RHS
-
-notes(we can't chane the value of const but we can change value let)
-(notes lexical scope help to flow above when we don't find the value function scope it check global scope when global also empty it take it auto global )
-
-(TdZ= temopary dead zone when we declare let and const before consuming its reachedus into dead zone but it's opposiye in case ovar its easily declate before the instilization)
-
-##hoisting
-when we cansume the value of let /const before declation it take us error; but in case of const it easily work and take us to undifined value
-
-function declartion = when we used  function and its first token is function is called function declation;
-functin expression = when used function and its first token is not a function is called = function expression 
-
-types of function is d/f types
-1)anynomous function when we put function into the variables is calle anynomous function we can't give the for its )
-2) immediatly function = wehen we call the function inside the function its pack into (in) is called immediatly involve function )  
-3) arrow function is used in which used the arroew for define the function is callled arrow function
-
-##OBJECT = synchromous = when code excute line by line is called synchronous 
-Asynchronous = when code dos't exute libne by line is cllead asynchronous 
-###Making of object in js are d/f way
-acces the key of an object = Object.keys (object name)
-acces the value of an object in js  used this metod = Object.values(objectname)
+// let arr = [2,3,4,66]
 
 
 
-*/
+// var m=arr.reduce(function(result,current){
+//    return result+current
+// })
+// console.log(m)
+// let m = arr.filter(function (val){
+//        return val>3
+// })
+
+// console.log(m)
+// let y= arr.map(function(val){
+//     return val*val
+// })
+// console.log(y)
+
+// arr.forEach(function (num){
+// console.log(num*num)
+// })
+
+// function osama(){
+// let i=0
+
+// while(i>=10){
+//     console.log(i)
+//     i++
+// }
+
+// }
+// setInterval(osama,10)
+
+
+// 
+
+
+// var  timer=0
+
+// function add(){
+//    timer<=50;
+
+//    if(timer===50){
+//     clearInterval(set)
+// }
+//     timer++
+//     console.log(timer)
+// }
+// var set = setInterval(add,10)
+
+// function fn(){
+// for(let i=0;i<=10;i++){
+// console.log("osama")
+// }
+
+// if(i===10){
+//     clearInterval(x)
+// }
+
+// }
+
+// let x = setInterval(fn(),1000)
+
+// console.log(x)
+
+
+// let score = undefined
+
+// console.log(typeof score)
+// let numbervalue = Number(score)
+// console.log(typeof(numbervalue))
+// console.log(numbervalue)
+
+// let value = 1
+
+// let convert= Boolean(value)
+// console.log(convert)
+
+let sum = '333'
+
+let convert = Boolean(sum)
+console.log(convert)
+console.log(typeof(convert))
